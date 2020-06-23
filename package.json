@@ -20,11 +20,11 @@
     "express-handlebars": "^4.0.4",
     "express-mysql-session": "^2.1.4",
     "express-sessions": "^1.0.6",
-    "express-validator": "^6.5.0",
+    "express-validator": "^6.6.0",
     "morgan": "^1.10.0",
     "mysql": "^2.18.1",
     "pg": "^8.2.1",
-    "pg-promise": "^10.5.6",
+    "pg-promise": "^10.5.7",
     "save": "^2.4.0",
     "timeago.js": "^4.0.2",
     "yargs": "^15.3.1"

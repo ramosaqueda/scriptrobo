@@ -22,28 +22,13 @@
                         </div>
                      </div>
                      <div class="col-md-4 mb-3">
-                        <label for="state">Fecha</label>
-                        <div class="input-group date" id="fecha" data-target-input="nearest">
-                            <input type="text" class="form-control datetimepicker-input" data-target="#fecha"/>
-                            <div class="input-group-append" data-target="#fecha" data-toggle="datetimepicker">
-                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                            </div>
-                        </div>
-                        
-
-
-                         
-                        
-
-
-                     </div>
-                     <div class="col-md-3 mb-3">
-                        <label for="zip">Hora</label>
-                        <input type="text" class="form-control" id="hora" placeholder="" required="">
+                        <label for="state">Fecha y Hora</label>
+                        <input type="text" class="form-control" id="fecha" placeholder="" required="">
                         <div class="invalid-feedback">
-                           Zip code required.
+                            Ingres fecha
                         </div>
                      </div>
+                      
                   </div>
                   <!-- ingreso delantecednetes del sujeto-->
                   <div class="mb-3">
@@ -182,27 +167,7 @@
                    
                         <div class="form-row collapse multi-collapse" id="datoscamsacfi">
 
-                            <div class="col-3">
-                                <label for="ident_camsacfi">Identificación</label>
-                               <input type="text" name="ident_camsacfi" class="form-control">
-                             </div>
-
-                            <div class="col-3">
-                            <label for="resp_camsacfi">Responsable</label>
-                              <input type="text" name="resp_camsacfi" class="form-control">
-                            </div>
-                            
-                           
-                            <div class="col-4">
-                               <label for="dato_camsacfi">Dato</label>
-                              <input type="text" name="dato_camsacfi" class="form-control" >
-                            </div>
-                            <!--
-                            <div class="col-3">
-                                <label for="detalle_mediot">Detalle Caracteristico</label>
-                                <input type="text" name="detalle_mediot" class="form-control" >
-                              </div>
-                              -->
+                           {{> cam_sacfi }}
                           </div>
                         
                       
@@ -430,8 +395,8 @@
 
 
       <script>
-         $(function () {
-                $('#fecha').datetimepicker();
-            });   
-       
+         
+        $('#fecha').datetimepicker({ footer: true, modal: true  });
+
+            
     </script>
