@@ -1,0 +1,35 @@
+{
+  "name": "scriptrobo",
+  "version": "1.0.0",
+  "description": "Plantilla para formulario de contacto.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": " "
+  },
+  "author": "Rafael Ramos",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "connect-flash": "^0.1.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "express-mysql-session": "^2.1.4",
+    "express-sessions": "^1.0.6",
+    "express-validator": "^6.5.0",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "pg": "^8.2.1",
+    "pg-promise": "^10.5.6",
+    "save": "^2.4.0",
+    "timeago.js": "^4.0.2",
+    "yargs": "^15.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

@@ -1,0 +1,437 @@
+{{> head }}
+<div class="container">
+         <div class="py-5 text-center">
+           <!-- kr$%kBRqs4$s4jfly&c!
+            
+               <img class="d-block mx-auto mb-4" src="/docs/4.5/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72"> -->
+            <h2>Pauta de Llamado de Robos</h2>
+            <p class="lead">Bienvenid@s, complete los items que aparecen a continuación.</p>
+         </div>
+         <div class="row">
+            <div class="col-md-8 order-md-1">
+               <h6 class="mb-3">Lugar de los hechos</h6>
+               <form class="needs-validation" novalidate="">
+                  <!-- ingreso del lugar de los hechos-->
+                  <div class="row">
+                     <div class="col-md-5 mb-3">
+                        
+                        <label for="country">Lugar del hecho</label>
+                        <input type="text" class="form-control" id="lugar" placeholder="Lugar..." required="">
+                        <div class="invalid-feedback">
+                           Por favor ingresa los datos
+                        </div>
+                     </div>
+                     <div class="col-md-4 mb-3">
+                        <label for="state">Fecha</label>
+                        <div class="input-group date" id="fecha" data-target-input="nearest">
+                            <input type="text" class="form-control datetimepicker-input" data-target="#fecha"/>
+                            <div class="input-group-append" data-target="#fecha" data-toggle="datetimepicker">
+                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                            </div>
+                        </div>
+                        
+
+
+                         
+                        
+
+
+                     </div>
+                     <div class="col-md-3 mb-3">
+                        <label for="zip">Hora</label>
+                        <input type="text" class="form-control" id="hora" placeholder="" required="">
+                        <div class="invalid-feedback">
+                           Zip code required.
+                        </div>
+                     </div>
+                  </div>
+                  <!-- ingreso delantecednetes del sujeto-->
+                  <div class="mb-3">
+                    <h6 class="mb-3">Mantiene antecedentes sobre la identidad del sospechoso?</h6>
+               
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch1"  data-toggle="collapse" href="#datossujeto">
+                        <label class="custom-control-label" for="customSwitch1">SI</label>
+                      </div>
+
+                      <!-- datos del sujeto si los tiene-->
+
+                   
+                        <div class="form-row collapse multi-collapse" id="datossujeto">
+                            <div class="col-2">
+                            <label for="apodo">Apodo</label>
+                              <input type="text" name="apodo" class="form-control">
+                            </div>
+                            <div class="col-3">
+                               <label for="nombre_sujeto">Nombre</label>
+                              <input type="text" name="nombre_sujeto" class="form-control">
+                            </div>
+                            <div class="col-4">
+                               <label for="domicilio_sujetp">Domicilio</label>
+                              <input type="text" name="domicilio_sujetp" class="form-control" >
+                            </div>
+                            <div class="col-3">
+                                <label for="domicilio_sujetp">Otro Dato</label>
+                                <input type="text" name="otrodato_sujeto" class="form-control" >
+                              </div>
+                          </div>
+                        
+
+                          
+
+                    
+
+
+                  </div>
+
+                  <!-- ingreso de los datos medios de transporte-->
+
+                  <div class="mb-3">
+                    <h6 class="mb-3">Mantiene antecedentes sobre medios de transporte utilizados?</h6>
+               
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="CS_medios"  data-toggle="collapse" href="#datosmedios">
+                        <label class="custom-control-label" for="CS_medios">SI</label>
+                      </div>
+
+                      <!-- datos del sujeto si los tiene-->
+
+                   
+                        <div class="form-row collapse multi-collapse" id="datosmedios">
+                            <div class="col-2">
+                            <label for="patente_mediot">Patente</label>
+                              <input type="text" name="patente_mediot" class="form-control">
+                            </div>
+                            <div class="col-3">
+                               <label for="color_mediot">Color</label>
+                              <input type="text" name="color_mediot" class="form-control">
+                            </div>
+                            <div class="col-4">
+                               <label for="modelo_mediot">Modelo</label>
+                              <input type="text" name="modelo_mediot" class="form-control" >
+                            </div>
+                            <div class="col-3">
+                                <label for="detalle_mediot">Detalle Caracteristico</label>
+                                <input type="text" name="detalle_mediot" class="form-control" >
+                              </div>
+                          </div>
+                        
+                      
+                          
+                          
+                    
+
+
+                  </div>
+
+
+                   <!-- datos camaras sitio-->    
+
+                   <div class="mb-3">
+                    <h6 class="mb-3">Mantiene registro de cámaras del sitio del suceso?</h6>
+               
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="CS_camsitio"  data-toggle="collapse" href="#datoscamsitio">
+                        <label class="custom-control-label" for="CS_camsitio">SI</label>
+                      </div>
+
+                 
+
+                   
+                        <div class="form-row collapse multi-collapse" id="datoscamsitio">
+                            <div class="col-7">
+                            <label for="patente_mediot">Datos Cámara</label>
+                              <input type="text" name="patente_mediot" class="form-control">
+                            </div>
+                            <!--
+                            <div class="col-3">
+                               <label for="color_mediot">Color</label>
+                              <input type="text" name="color_mediot" class="form-control">
+                            </div>
+                            <div class="col-4">
+                               <label for="modelo_mediot">Modelo</label>
+                              <input type="text" name="modelo_mediot" class="form-control" >
+                            </div>
+                            <div class="col-3">
+                                <label for="detalle_mediot">Detalle Caracteristico</label>
+                                <input type="text" name="detalle_mediot" class="form-control" >
+                              </div>
+                              -->
+                          </div>
+                        
+                      
+                          
+                          
+                    
+
+
+                  </div>
+
+                  <!-- carmaras red SACFI-->
+
+                  <div class="mb-3">
+                    <h6 class="mb-3">Cámaras de Red SACFI?</h6>
+               
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="CS_camsacfi"  data-toggle="collapse" href="#datoscamsacfi">
+                        <label class="custom-control-label" for="CS_camsacfi">SI</label>
+                      </div>
+
+                 
+
+                   
+                        <div class="form-row collapse multi-collapse" id="datoscamsacfi">
+
+                            <div class="col-3">
+                                <label for="ident_camsacfi">Identificación</label>
+                               <input type="text" name="ident_camsacfi" class="form-control">
+                             </div>
+
+                            <div class="col-3">
+                            <label for="resp_camsacfi">Responsable</label>
+                              <input type="text" name="resp_camsacfi" class="form-control">
+                            </div>
+                            
+                           
+                            <div class="col-4">
+                               <label for="dato_camsacfi">Dato</label>
+                              <input type="text" name="dato_camsacfi" class="form-control" >
+                            </div>
+                            <!--
+                            <div class="col-3">
+                                <label for="detalle_mediot">Detalle Caracteristico</label>
+                                <input type="text" name="detalle_mediot" class="form-control" >
+                              </div>
+                              -->
+                          </div>
+                        
+                      
+                          
+                          
+                    
+
+
+                  </div>
+
+                     <!-- carmaras red Publica-->
+                     <div class="mb-3">
+                        <h6 class="mb-3">Cámaras de Red Pública?</h6>
+                   
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="CS_campublica"  data-toggle="collapse" href="#datoscampublica">
+                            <label class="custom-control-label" for="CS_campublica">SI</label>
+                          </div>
+    
+                     
+    
+                       
+                            <div class="form-row collapse multi-collapse" id="datoscampublica">
+    
+                                <div class="col-3">
+                                    <label for="ident_campublic">Identificación</label>
+                                   <input type="text" name="ident_campublic" class="form-control">
+                                 </div>
+    
+                                <div class="col-3">
+                                <label for="resp_campublic">Responsable</label>
+                                  <input type="text" name="resp_campublic" class="form-control">
+                                </div>
+                                
+                               
+                                <div class="col-4">
+                                   <label for="dato_campublic">Dato</label>
+                                  <input type="text" name="dato_campublic" class="form-control" >
+                                </div>
+                                <!--
+                                <div class="col-3">
+                                    <label for="detalle_mediot">Detalle Caracteristico</label>
+                                    <input type="text" name="detalle_mediot" class="form-control" >
+                                  </div>
+                                  -->
+                              </div>
+                            
+                          
+                              
+                              
+                        
+    
+    
+                     </div>
+
+                      <!-- especies son rastreables-->
+                      <div class="mb-3">
+                        <h6 class="mb-3">Las especies sutraidas son rastreables?</h6>
+                   
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="CS_cespecierastreable"  data-toggle="collapse" href="#especiesrastreables">
+                            <label class="custom-control-label" for="CS_cespecierastreable">SI</label>
+                          </div>
+    
+                     
+    
+                       
+                            <div class="collapse multi-collapse" id="especiesrastreables">
+                                <span class="badge badge-secondary">Celular</span>
+                                <div class="form-row">
+                                    <div class="col-2">
+                                        <label for="ident_campublic">Marca</label>
+                                       <input type="text" name="ident_campublic" class="form-control">
+                                     </div>
+        
+                                    <div class="col-2">
+                                    <label for="resp_campublic">Modelo</label>
+                                      <input type="text" name="resp_campublic" class="form-control">
+                                    </div>
+                                    
+                                   
+                                    <div class="col-3">
+                                       <label for="dato_campublic">Compañía</label>
+                                      <input type="text" name="dato_campublic" class="form-control" >
+                                    </div>
+
+                                    <div class="col-3">
+                                        <label for="dato_campublic">Cuenta Google/iCloud</label>
+                                       <input type="text" name="dato_campublic" class="form-control" >
+                                     </div>
+
+                                </div>
+                                <hr>
+                                <span class="badge badge-pill badge-secondary">Smart TV</span>
+                               
+                                <div class="form-row">
+                                    <div class="col-2">
+                                        <label for="ident_campublic">Marca</label>
+                                       <input type="text" name="ident_campublic" class="form-control">
+                                     </div>
+        
+                                    <div class="col-2">
+                                    <label for="resp_campublic">Modelo</label>
+                                      <input type="text" name="resp_campublic" class="form-control">
+                                    </div>
+                                    
+                                   
+                                    <div class="col-3">
+                                       <label for="dato_campublic">Aplcación NETFLIX</label>
+                                      <input type="text" name="dato_campublic" class="form-control" >
+                                    </div>
+
+                                    <div class="col-3">
+                                        <label for="dato_campublic">Otra Aplicación</label>
+                                       <input type="text" name="dato_campublic" class="form-control" >
+                                     </div>
+
+                                </div>
+                                <hr>
+                                <span class="badge badge-pill badge-secondary">PC-Laptop u otro dispositivo</span>
+
+                                <div class="form-row">
+                                    <div class="col-2">
+                                        <label for="ident_campublic">Marca</label>
+                                       <input type="text" name="ident_campublic" class="form-control">
+                                     </div>
+        
+                                    <div class="col-2">
+                                    <label for="resp_campublic">Modelo</label>
+                                      <input type="text" name="resp_campublic" class="form-control">
+                                    </div>
+                                    
+                                   
+                                    <div class="col-3">
+                                       <label for="dato_campublic">Aplcación de rastero</label>
+                                      <input type="text" name="dato_campublic" class="form-control" >
+                                    </div>
+
+                                    <div class="col-3">
+                                        <label for="dato_campublic">IP</label>
+                                       <input type="text" name="dato_campublic" class="form-control" >
+                                     </div>
+
+                                </div>
+
+
+                                
+                                
+                               
+                                
+                              </div>
+                            
+                          
+                              
+                              
+                        
+    
+    
+                      </div>
+
+
+                       <!-- ESPECIES SUSTRAIDAS SON EXCLUSIVAS O CON DETALLES UNICOS CARACTERISTICOS? otros datos de las especies-->
+
+                  <div class="mb-3">
+                    <h6 class="mb-3">Las Especies sustraidas son exclusivas o con detalles unicos caracteristicos?</h6>
+               
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="CS_datoscaract"  data-toggle="collapse" href="#datosespeciecaract">
+                        <label class="custom-control-label" for="CS_datoscaract">SI</label>
+                      </div>
+
+                 
+
+                   
+                        <div class="form-row collapse multi-collapse" id="datosespeciecaract">
+
+                            <div class="col-2">
+                                <label for="ident_camsacfi">Tipo</label>
+                               <input type="text" name="ident_camsacfi" class="form-control">
+                             </div>
+
+                            <div class="col-3">
+                            <label for="resp_camsacfi">Marca</label>
+                              <input type="text" name="resp_camsacfi" class="form-control">
+                            </div>
+                            
+                           
+                            <div class="col-4">
+                               <label for="dato_camsacfi">Detalle caracterisitco</label>
+                              <input type="text" name="dato_camsacfi" class="form-control" >
+                            </div>
+                             
+                            <div class="col-3">
+                                <label for="detalle_mediot">Numero de serie</label>
+                                <input type="text" name="detalle_mediot" class="form-control" >
+                              </div>
+                            
+                              <div class="col-5">
+                                <label for="detalle_mediot">Otro</label>
+                                <input type="text" name="detalle_mediot" class="form-control" >
+                              </div>
+                          </div>
+                        
+                      
+                          
+                          
+                    
+
+
+                  </div>
+
+                  <hr class="mb-4">
+                  <button class="btn btn-primary btn-lg btn-block" type="submit">Grabar formulario</button>
+               </form>
+            </div>
+         </div>
+         <footer class="my-5 pt-5 text-muted text-center text-small">
+            <p class="mb-1">© 2020 UGI-IV</p>
+            <ul class="list-inline">
+ 
+            </ul>
+         </footer>
+      </div>
+
+
+
+      <script>
+         $(function () {
+                $('#fecha').datetimepicker();
+            });   
+       
+    </script>
