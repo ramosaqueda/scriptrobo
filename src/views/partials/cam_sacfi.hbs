@@ -1,19 +1,28 @@
- <form>
- <div class="col-3">
-                <label for="ident_camsacfi">Identificación</label>
-                <input type="text" name="ident_camsacfi" class="form-control">
- </div>
- <div class="col-3">
-            <label for="resp_camsacfi">Responsable</label>
-                <input type="text" name="resp_camsacfi" class="form-control">
-</div>
-            
-            
-<div class="col-4">
-                <label for="dato_camsacfi">Dato</label>
- <input type="text" name="dato_camsacfi" class="form-control" >
+  {{console.log(get.data)}}
+ {{#if data}}
+
+<div>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Identificación</th>
+      <th scope="col">Responsable</th>
+      <th scope="col">Dato</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each data}}
+    <tr>
+      <th scope="row">1</th>
+      <td>{{data.id}}</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    {{/each}}
+    
+  </tbody>
+</table>
 </div>
 
-<button type="button" class="btn btn-primary btn-sm">+</button>
-
-</form>
+ {{/if}}

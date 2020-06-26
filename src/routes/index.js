@@ -1,8 +1,15 @@
 const express = require('express');
 const router = express.Router();
+const CamSacfiController = require ('../controllers/CamSacfiController');
+
+
+ 
+ 
 router.get('/',(req,res) =>{
-    res.render('form');
+    res.render('../views/layouts/main');
 });
+
+router.post('/agregacamsacfi', CamSacfiController.create);
 
 module.exports =router
 

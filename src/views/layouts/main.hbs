@@ -162,12 +162,33 @@
                         <label class="custom-control-label" for="CS_camsacfi">SI</label>
                       </div>
 
-                 
+
+                         
 
                    
                         <div class="form-row collapse multi-collapse" id="datoscamsacfi">
 
-                           {{> cam_sacfi }}
+                           <div class="col-4">
+                                  <label for="ident_camsacfi">Identificación</label>
+                                  <input type="text" name="camsacfi_indent" id="camsacfi_indent" class="form-control">
+                                  </div>
+                                  <div class="col-3">
+                                        <label for="resp_camsacfi">Responsable</label>
+                                        <input type="text" id="camsacfi_responsalbe" name="camsacfi_responsalbe" class="form-control">
+                                  </div>
+                                              
+                                              
+                                  <div class="col-4">
+                                    <label for="dato_camsacfi">Dato</label>
+                                  <input type="text"  id="camsacfi_dato"  name="camsacfi_dato" class="form-control" >
+                                  </div>
+                                  <div class="col-1">
+                                      <label >Dato</label>
+                                      <button type="button" id="botoncamsafi" class="btn btn-primary btn-sm">Agregar</button>
+                                  </div>
+
+                                    {{> cam_sacfi }}
+                                  
                           </div>
                         
                       
@@ -207,12 +228,10 @@
                                    <label for="dato_campublic">Dato</label>
                                   <input type="text" name="dato_campublic" class="form-control" >
                                 </div>
-                                <!--
-                                <div class="col-3">
-                                    <label for="detalle_mediot">Detalle Caracteristico</label>
-                                    <input type="text" name="detalle_mediot" class="form-control" >
-                                  </div>
-                                  -->
+                                <div class="col-1">
+                                  <label>Agregar</label>
+                                  <button type="button" class="btn btn-primary btn-sm">+</button>
+                              </div>
                               </div>
                             
                           
@@ -397,6 +416,18 @@
       <script>
          
         $('#fecha').datetimepicker({ footer: true, modal: true  });
+        
+          $("#botoncamsafi").click(function(){
+            $.post("/agregacamsacfi",
+            {
+               frm_id:1,
+               camsacfi_indent: $("#camsacfi_indent").val(),
+               camsacfi_responsalbe : $("#camsacfi_responsalbe").val(),
+               camsacfi_dato : $("#camsacfi_dato").val()
+            });
+          });
 
+
+          
             
     </script>

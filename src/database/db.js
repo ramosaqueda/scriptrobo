@@ -7,11 +7,4 @@ const pool = new Pool({
     database:'formulario'
 
 });
-
-const getFormuario = async () =>{
-  const res = await pool.query("select * from \"public\".formulario formulario");
-  console.log(res.rows);
-};
-
-//const setFormulario
-getFormuario();
+module.exports= pool;
