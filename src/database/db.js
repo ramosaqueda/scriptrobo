@@ -1,4 +1,6 @@
 const { Pool } = require('pg');
+const { promisify }= require('util');
+
 
 const pool = new Pool({
     user:'postgres',
@@ -7,4 +9,5 @@ const pool = new Pool({
     database:'formulario'
 
 });
+pool.query = promisify(pool.query);
 module.exports= pool;

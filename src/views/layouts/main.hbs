@@ -187,8 +187,10 @@
                                       <button type="button" id="botoncamsafi" class="btn btn-primary btn-sm">Agregar</button>
                                   </div>
 
-                                    {{> cam_sacfi }}
-                                  
+                                
+
+                                    {{> cam_sacfi this.ID:1}}
+                                    
                           </div>
                         
                       
@@ -427,7 +429,14 @@
             });
           });
 
-
+           $("#CS_camsacfi").click(function(){
+             if ( $("#CS_camsacfi").is(':checked') == true ) {
+                $.post("/listarcamsacfi",
+                    {
+                        id:1
+                    });
+             }
+          });
           
             
     </script>

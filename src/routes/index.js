@@ -11,6 +11,9 @@ router.get('/',(req,res) =>{
 
 router.post('/agregacamsacfi', CamSacfiController.create);
 
+router.post('/listarcamsacfi', CamSacfiController.lista_cam);
+
+
 module.exports =router
 
  

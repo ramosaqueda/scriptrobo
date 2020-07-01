@@ -4,14 +4,16 @@ let fechoy = moment(new Date()).format("YYYY-MM-DD");
 
 const con = require('../database/db');
  
+ 
 module.exports = {  
     get: (callback) => {      
       con.query(`SELECT * FROM "public"."frrobos_camSacfi" LIMIT 1000 OFFSET 0
                 `, callback)
     },
   
-    getById: (con, id, callback) => {
-      con.query(`SELECT * FROM "public"."frrobos_camSacfi" WHERE camsacfi_id  ${id}`, callback)
+    getById: (id, callback) => {
+      let qry = `SELECT * FROM "public"."frrobos_camSacfi" WHERE camsacfi_id = ${id}`;
+      con.query(qry, callback)
     },
 
 
