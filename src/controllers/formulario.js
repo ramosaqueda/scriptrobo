@@ -11,7 +11,7 @@ const ubicacion = require("../model/ubicacion");
 module.exports = {
   
     index: function(req, res) {
-        rows=null;
+    rows=null;
       peritajes.get(req.con, function(err, rows) {
         res.render("form", { data: rows ,  moment:moment})
       })

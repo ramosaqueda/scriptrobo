@@ -3,6 +3,8 @@ const morgan = require('morgan');
 const app = express();
 const exphbs = require('express-handlebars');
 const path = require('path');
+const bodyParser = require('body-parser');
+
 const db = require('./database/db.js');
 
 

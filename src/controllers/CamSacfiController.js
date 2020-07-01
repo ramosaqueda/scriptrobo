@@ -2,15 +2,8 @@
 const CamSacfiCtrl = {};
 const CamSacfi = require("../models/CamSacfi");
  
-const pool = require('../database');
+const pool = require('../database/db');
  
-//const moment = require('moment');
-/*const peritajes = require("../model/peritajes");
-const peritos = require("../model/peritos");
-const fiscales = require("../model/fiscales");
-c
-const ubicacion = require("../model/ubicacion");
- */
  
 
  
@@ -25,9 +18,9 @@ const ubicacion = require("../model/ubicacion");
   
 
     CamSacfiCtrl.lista_cam = async (req, res) => {
-     
-      const camsacfi = await pool.query('SELECT * FROM "public"."frrobos_camSacfi" WHERE camsacfi_id = ?', [req.id]);
-      res.render('partials', { camsacfi });
+      const camsacfi = await pool.query('SELECT * FROM "public"."frrobos_camSacfi"');
+    
+      res.render('partials/cam_sacfi', { camsacfi });
   }
        
   CamSacfiCtrl.create=async (req, res) => {

@@ -1,7 +1,4 @@
-<h1>HOLA {{camsacfi}}</h1>
- 
- {{#if camsacfi}}
-<h1>hola</h1>
+{{#each camsacfi}}
 <div>
 <table class="table">
   <thead class="thead-dark">
@@ -13,18 +10,19 @@
     </tr>
   </thead>
   <tbody>
-    {{#each camsacfi}}
-    
+  
     <tr>
       <th scope="row">1</th>
-      <td>{{data.id}}</td>
+      <td>{{camsacfi.id}}</td>
       <td>Otto</td>
       <td>@mdo</td>
     </tr>
-    {{/each}}
+   
     
   </tbody>
 </table>
 </div>
+{{else}}
+pico
+ {{/each}}
 
- {{/if}}
